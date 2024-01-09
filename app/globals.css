@@ -1,10 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+input, button{
+  outline: transparent;
+}
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-rgb: #161414;
+  --greenHover: #61CE70;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -15,4 +18,49 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.pad{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.width{
+  max-width: 1350px;
+  margin: auto;
+}
 
+@media screen and (min-width: 1024px) {
+  
+}
+
+/* to be removed when not neede */
+body{
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.scale_out{
+  animation: scale_out .5s linear;
+}
+@keyframes scale_out {
+  0%{
+    transform: scale(0.3);
+  }
+  30%{
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.scale_in{
+  animation: scale_in .3s linear;
+}
+@keyframes scale_in {
+  0%{
+    transform: scale(2);
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+  }
+}

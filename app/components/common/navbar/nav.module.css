@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.navContainer{
+    @apply py-[2rem] fixed top-0 w-full;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.13);
+}
+.top{
+    @apply py-[2rem]
+}
+.innerContainer{
+    @apply flex justify-between items-center;
+}
+.navBackground{
+    @apply bg-[var(--background-rgb)] py-[1rem];
+}
+.toggleNav{
+    @apply text-white/80 transition duration-150 uppercase flex items-center gap-[1rem];
+}
+.toggleNav:hover{
+    @apply text-[var(--greenHover)];
+}
+.toggleDiv{
+    @apply flex flex-col gap-[0.3rem];
+}
+.toggleDiv div{
+    @apply w-[3rem] bg-white/80 h-[0.08rem];
+    /* background-color: rgb(41, 40, 40); */
+}
+
+
+
+
+
+/* This is for the hidden nav menu */
+.nav_menu{
+    @apply relative;
+}
+.hideLeft{
+    @apply fixed h-[100vh] w-[100vw] bg-black/60 top-0 transition duration-1000;
+}
+.hideLeftActive{
+    transform: translateX(-100%);
+}
+.hideRight{
+    @apply fixed h-[100vh] flex flex-col justify-between transition duration-1000 bg-[rgb(25,23,23)] w-[50rem] top-0 right-0;
+}
+.hideRightActive{
+    transform: translateX(100%);
+    /* @apply */
+}
+.closeNav{
+    @apply text-[var(--greenHover)] transition duration-150 uppercase flex items-center gap-[1rem];
+    float: right;
+    margin: 2.5rem 6rem;
+}
+.closeDiv{
+    @apply flex flex-col gap-[0rem];
+}
+.closeDiv div{
+    @apply w-[3rem] bg-white/80 h-[0.08rem];
+}
+.closeDiv .div1{
+    transform: rotate(45deg);
+}
+.closeDiv .div2{
+    transform: rotate(-45deg);
+}
+/* the navlist in the slide in panel */
+.navList{
+    @apply text-[white] mt-[12rem] flex flex-col gap-6 ml-[4rem] text-[2.8rem] font-[200]; 
+}
+.greenDot{
+    @apply bg-[var(--greenHover)] rounded-[100%] w-[6px] h-[6px];
+}
+.navList li{
+    @apply flex items-center gap-4;
+}
+.copyright{
+    @apply flex capitalize text-[0.8rem] py-[1.5rem] px-[4rem] justify-between items-center text-white/70;
+}
+.copyright ul{
+    @apply flex text-[1rem] gap-4;
+}
+.nav_footer hr{
+    @apply border-0 bg-transparent border-t-[0.1rem] border-t-white/10
+}
+.form{
+    @apply px-[4rem] text-[1.4rem] mb-[2rem] flex gap-4;
+}
+.inputBox, .nav_footer button{
+    @apply text-[1rem] font-[600] h-[4rem]  items-center px-8  border-2 border-white/30 rounded-[4px] flex gap-4 text-white/70;
+    font-family: 'Montserrat', sans-serif;
+}
+.mini_socials{
+    @apply px-[4rem] mb-[1.2rem] flex gap-4;
+}
+.github, .rumble{
+    @apply py-8 text-[1rem] ;
+    overflow: hidden;
+    /* height: 0.4rem; */
+}
+.form input{
+    @apply w-[20rem] bg-transparent text-[1.4rem] text-white h-[4rem];
+}
+.searchbutton{
+    @apply w-[12rem] flex items-center justify-center;
+}
