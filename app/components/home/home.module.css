@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400&family=Montserrat&display=swap');
 @font-face {
     font-family: "neon";
     src: url("/assets/fonts/NEON____.TTF");
@@ -50,5 +51,42 @@
 
 /* about section for the homepage */
 .aboutContainer{
-    @apply py-[4rem] bg-[#0A0A0A]
+    @apply py-[16rem] bg-[#0A0A0A] text-white;
+}
+.imagebox{
+    @apply relative w-full aspect-square bg-white/20 rotate-[5deg];
+}
+.image{
+    @apply rotate-[-5deg] rounded-xl;
+}
+.textBox{
+    @apply py-[2rem]
+}
+.aboutTitle{
+    @apply font-[600] text-[3rem] mb-4;
+    font-family: 'Heebo', sans-serif;
+}
+.AboutText{
+    @apply text-justify mt-[2rem] text-[1.2rem] font-[400] opacity-[0.8]
+}
+.AboutText p{
+    @apply mb-[2rem];
+}
+.aboutButtons{
+    @apply flex gap-4
+}
+.cardContainer{
+    @apply mb-[8rem] flex items-center flex-col gap-[4rem]
+}
+
+@media screen and (min-width: 1208px) {
+    .cardContainer{
+        @apply flex items-center flex-row gap-[4rem];
+    }
+    .imagebox{
+        flex-basis: 120%;
+    }
+    .text2about{
+        flex-basis: 80%;        
+    }
 }

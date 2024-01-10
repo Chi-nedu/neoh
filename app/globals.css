@@ -7,7 +7,7 @@ input, button{
 
 :root {
   --background-rgb: #161414;
-  --greenHover: #61CE70;
+  --greenHover: #78F701;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -19,12 +19,26 @@ input, button{
   }
 }
 .pad{
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .width{
   max-width: 1350px;
   margin: auto;
+}
+
+.button{
+  @apply transition duration-200 text-[1.2rem] uppercase font-[600] py-2 items-center border-[3px] border-white/30 rounded-[8px] text-white/70;
+  font-family: 'Montserrat', sans-serif;
+}
+.button:hover{
+  @apply border-[var(--greenHover)];
+}
+.lineDown{
+  @apply translate-y-[-100%] transition duration-200;
+}
+.button:hover .lineDown{
+  @apply bg-[var(--greenHover)] translate-y-[0%];
 }
 
 @media screen and (min-width: 1024px) {
