@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "neon";
+    src: url("/assets/fonts/NEON____.TTF");
+}
 .container{
-    @qpply
+    height: min(1028px, 100vh);
+    @apply flex items-center justify-center;
+
+}
+.AnimatedText{
+    @apply text-[1.8rem] ;
+}
+.miniContainer{
+    @apply w-[40rem] text-center;
+}
+.herotext{
+    font-family:  neon!important;
+    @apply text-[8rem] font-[400]
 }

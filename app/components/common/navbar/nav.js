@@ -6,7 +6,7 @@ import Logo from "../logo"
 import Nav_menu from "./nav_menu"
 
 function Nav() {
-    const [background, setbackground] = useState(true)
+    const [background, setbackground] = useState(false)
     const [toggle, settoggle] = useState(false)
     useEffect(() => {
         window.onscroll = ()=>{
