@@ -57,8 +57,8 @@ export const AnimatedText =({
         transition={{staggerChildren: 0.04}} 
         aria-hidden>
 
-        {text.split("").map(char=>
-        <motion.span variants={defaultAnimations} aria-hidden>{char}</motion.span>)}
+        {text.split("").map((char, index)=>
+        <motion.span key={index} variants={defaultAnimations} aria-hidden>{char}</motion.span>)}
         
       </motion.span>
       
