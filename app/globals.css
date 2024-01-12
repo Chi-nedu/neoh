@@ -9,6 +9,7 @@ input, button{
   --background-rgb: #161414;
   --greenHover: #78F701;
   --background-end-rgb: 255, 255, 255;
+  --darkBrownBg: #0c0707;
 }
 
 @media (prefers-color-scheme: dark) {

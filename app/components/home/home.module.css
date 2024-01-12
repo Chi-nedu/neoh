@@ -94,7 +94,7 @@
 /* the why chose us section */
 .whyContainer{
     @apply py-[8rem] text-white;
-    background-color: #0c0707;
+    background-color: var(--darkBrownBg);
 }
 .whytitle{
     @apply font-[400] text-[3rem] mb-4 text-white text-center;
@@ -110,12 +110,12 @@
     @apply min-w-[17rem];
 }
 .box1{
-    @apply transition duration-200;
+    @apply transition duration-300;
     border-top: transparent 2.2rem solid;
     border-right: rgba(255, 255, 255, 0.1) 1rem solid;
 }
 .cardTop .box2{
-    @apply transition duration-200;
+    @apply transition duration-300;
     border-top: transparent 2.2rem solid;
     border-left: rgba(255, 255, 255, 0.1) 1rem solid;
 }
@@ -128,7 +128,7 @@
     border-left: var(--greenHover) 1rem solid;
 }
 .cardTopText{
-    @apply transition duration-200;
+    @apply transition duration-300;
     @apply bg-white/10 text-white p-1 px-4;
     /* border-left: 1rem solid white; */
 }
@@ -157,4 +157,79 @@
 /* latest section */
 .latest{
     @apply bg-[var(--background-rgb)] text-white py-[8rem];
+}
+.latestFlexBox{
+    @apply flex gap-[2.5rem] flex-wrap justify-center;
+}
+.latestCard{
+    @apply w-[31%] min-w-[20rem] rounded-md;
+}
+.imageConatinerLatest{
+    @apply relative w-full aspect-[1] rounded scale-[1.02] overflow-hidden;
+}
+.imageLatest{
+    @apply transition duration-[1s];
+}
+.latestCard:hover .imageLatest{
+    @apply scale-[1.3] rotate-[-10deg]; 
+}
+.buttonLatest{
+    @apply m-auto transition duration-200 text-center my-8 text-[1.2rem] font-[600] hover:text-[var(--greenHover)];
+}
+.see_all{
+    @apply w-full rounded text-center text-[1.2rem] font-[400] text-white/60 hover:text-[var(--greenHover)] duration-200 transition uppercase block py-4 font-[400] mt-[4rem];
+}
+
+/* latest pop up section */
+.latestPopUp{
+    @apply flex justify-center items-center fixed top-0 right-0 w-full min-h-full bg-[rgb(67,67,80)]/60;
+    /* z-index: 1000000000; */
+}
+.imageConatinerLatestPopUp{
+    @apply relative w-[8rem] flex-[50%] aspect-[1] rounded-xl scale-[1.02] overflow-hidden;
+}
+.PopUpCard{
+    @apply flex  relative gap-[4rem] items-center bg-[#0c0707] max-w-[65rem] rounded-xl p-[4rem];
+}
+.popUpTextBox{
+    @apply flex-[50%];
+}
+.PopUptitle{
+    @apply font-[600] text-[2.7rem] mb-2 text-white;
+    font-family: 'Heebo', sans-serif;
+}
+.popUpcontent p, .popUpcontent a{
+    display: inline;
+}
+.popUpcontent{
+    @apply my-12 ;
+}
+.popUptext{
+    @apply text-[1.2rem] opacity-90 font-[300]
+}
+.popUpLink{
+    @apply text-[1.2rem] px-2 text-[var(--greenHover)] hover:underline;
+}
+.closeNav{
+    @apply bg-[var(--background-rgb)] p-4 absolute top-[-3.5rem] right-2 text-[var(--greenHover)] transition duration-150 uppercase flex items-center gap-[1rem];
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.closeDiv{
+    @apply flex flex-col gap-[0rem];
+}
+.closeDiv div{
+    @apply w-[3rem] bg-white/80 h-[0.08rem];
+}
+.closeDiv .div1{
+    transform: rotate(45deg);
+}
+.closeDiv .div2{
+    transform: rotate(-45deg);
+}
+.investorsContainer{
+    @apply bg-[var(--darkBrownBg)];
+}
+.investorsFlexBox{
+    @apply flex;
 }
