@@ -19,12 +19,18 @@ input, button{
   }
 }
 .pad{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .width{
   max-width: 1350px;
   margin: auto;
+}
+.bgreenHoverEffect{
+  @apply transition duration-200 border-[3px] border-white/30;
+}
+.bgreenHoverEffect:hover{
+  @apply border-[var(--greenHover)];
 }
 
 .button{
@@ -48,6 +54,7 @@ input, button{
 /* to be removed when not neede */
 body{
   background-color: rgba(0, 0, 0, 0.24);
+  overflow-x: hidden;
 }
 
 .scale_out{

@@ -51,7 +51,7 @@
 
 /* about section for the homepage */
 .aboutContainer{
-    @apply py-[16rem] bg-[#0A0A0A] text-white;
+    @apply py-[16rem] bg-[var(--background-rgb)] text-white;
 }
 .imagebox{
     @apply relative w-full aspect-square bg-white/20 rotate-[5deg];
@@ -89,4 +89,72 @@
     .text2about{
         flex-basis: 80%;        
     }
+}
+
+/* the why chose us section */
+.whyContainer{
+    @apply py-[8rem] text-white;
+    background-color: #0c0707;
+}
+.whytitle{
+    @apply font-[400] text-[3rem] mb-4 text-white text-center;
+    font-family: 'Heebo', sans-serif;
+}
+.whyFlexBox{
+    @apply flex gap-[2rem] justify-center;
+}
+.cardTop{
+    @apply flex pl-2 h-[2rem] overflow-hidden;
+}
+.whyCard{
+    @apply min-w-[17rem];
+}
+.box1{
+    @apply transition duration-200;
+    border-top: transparent 2.2rem solid;
+    border-right: rgba(255, 255, 255, 0.1) 1rem solid;
+}
+.cardTop .box2{
+    @apply transition duration-200;
+    border-top: transparent 2.2rem solid;
+    border-left: rgba(255, 255, 255, 0.1) 1rem solid;
+}
+.whyCard:hover .box1{
+    border-top: transparent 2.2rem solid;
+    border-right: var(--greenHover) 1rem solid;
+}
+.whyCard:hover .box2{
+    border-top: transparent 2.2rem solid;
+    border-left: var(--greenHover) 1rem solid;
+}
+.cardTopText{
+    @apply transition duration-200;
+    @apply bg-white/10 text-white p-1 px-4;
+    /* border-left: 1rem solid white; */
+}
+.whyCard:hover .cardTopText{
+    @apply bg-[var(--greenHover)];
+} 
+.whyCard:hover .WhytextBox{
+    @apply border-[var(--greenHover)];
+
+}
+.WhytextBox{
+    @apply text-white rounded p-[1rem] pt-[2rem] min-h-[23rem];
+}
+.cardMarginTop{
+    @apply mt-[3rem];
+} 
+.whyCardTitle{
+    @apply text-[1.5rem]  font-[600] py-6
+}
+.whyCardText{
+    @apply text-[1.3rem] font-[300] text-justify;
+    opacity: 0.6;
+}
+
+
+/* latest section */
+.latest{
+    @apply bg-[var(--background-rgb)] text-white py-[8rem];
 }
