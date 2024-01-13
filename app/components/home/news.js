@@ -16,7 +16,14 @@ function News() {
                     center={true}/>
             </div>
             <div className={style.newsFlexBox}>
-                <NewsConponent/>
+                {newsData.map((data, index)=><NewsConponent
+                    key={index}
+                    src={data.src} 
+                    text={data.text} 
+                    title={data.title} 
+                    date={data.date} 
+                    link1={data.link1} 
+                    link2={data.link2} />)}
             </div>
         </div>
     </div>
@@ -24,3 +31,46 @@ function News() {
 }
 
 export default News
+
+const newsData = [
+    {
+        src: '/images/desktop1.jpg', 
+        text: "Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit",
+        title: "Neoh's NFT goes public in Nod to crypto adoption", 
+        date: "June 21, 2022", 
+        link1: "/", 
+        link2: '/'
+    },
+    {
+        src: '/images/esktop2.jpg', 
+        text: "Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit",
+        title: "Neoh's NFT goes public in Nod to crypto adoption", 
+        date: "June 21, 2022", 
+        link1: "/", 
+        link2: '/'
+    },
+    {
+        src: '/images/desktop3.jpg', 
+        text: "Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit",
+        title: "Neoh's NFT goes public in Nod to crypto adoption", 
+        date: "June 21, 2022", 
+        link1: "/", 
+        link2: '/'
+    },
+    {
+        src: '/images/desktop4.jpg', 
+        text: "Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit",
+        title: "Neoh's NFT goes public in Nod to crypto adoption", 
+        date: "June 21, 2022", 
+        link1: "/", 
+        link2: '/'
+    },
+    {
+        src: '/images/desktop5.jpg', 
+        text: "Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim tincidunt, sit",
+        title: "Neoh's NFT goes public in Nod to crypto adoption", 
+        date: "June 21, 2022", 
+        link1: "/", 
+        link2: '/'
+    },
+]

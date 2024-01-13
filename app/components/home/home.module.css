@@ -253,7 +253,7 @@
 
 /* news component */
 .newsCard{
-    @apply w-full bg-[var(--darkBrownBg)] p-8 text-white rounded;
+    @apply w-full bg-[var(--darkBrownBg)] p-8 text-white rounded mb-[4rem];
 }
 .newsHead{
     @apply bg-[rgb(59,59,59)] w-fit px-4 py-2 ;
@@ -266,9 +266,14 @@
     color: rgb(184, 181, 181);
 }
 .newsImageContainer{
-    @apply w-[28rem] hidden rounded-xl overflow-hidden aspect-[1.5] fixed;
+    @apply w-full rounded-xl overflow-hidden aspect-[1.5] static;
 }
-
-.newsCard:hover .newsImageContainer{
-    @apply block;
+@media screen and (min-width: 1028px) {
+    .newsImageContainer{
+        @apply w-[28rem] hidden rounded-xl overflow-hidden aspect-[1.5] fixed;
+    }
+    
+    .newsCard:hover .newsImageContainer{
+        @apply block;
+    }
 }
