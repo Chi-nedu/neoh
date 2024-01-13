@@ -227,9 +227,48 @@
 .closeDiv .div2{
     transform: rotate(-45deg);
 }
+
+/* investors section */
 .investorsContainer{
     @apply bg-[var(--darkBrownBg)];
 }
 .investorsFlexBox{
-    @apply flex;
+    @apply flex gap-2 flex-wrap justify-center mt-[3rem];
+}
+.investor{
+    @apply w-[15rem] py-[4rem] flex justify-center bg-[rgb(21,21,22)] rounded-xl;
+}
+.investorText{
+    @apply transition duration-200 text-[rgb(128,128,128)] text-[1.8rem] font-[600] hover:text-white;
+}
+
+
+/* news section */
+.NewsContainer{
+    @apply bg-[--background-rgb];
+}
+.newsFlexBox{
+    @apply pt-[4rem];
+}
+
+/* news component */
+.newsCard{
+    @apply w-full bg-[var(--darkBrownBg)] p-8 text-white rounded;
+}
+.newsHead{
+    @apply bg-[rgb(59,59,59)] w-fit px-4 py-2 ;
+}
+.newsLink{
+    @apply text-[1.5rem] transition duration-200 hover:text-[var(--greenHover)] capitalize font-[600];
+}
+.newsText{
+    @apply font-[200] text-[1.2rem] capitalize py-4;
+    color: rgb(184, 181, 181);
+}
+.newsImageContainer{
+    @apply w-[28rem] hidden rounded-xl overflow-hidden aspect-[1.5] fixed;
+}
+
+.newsCard:hover .newsImageContainer{
+    @apply block;
 }
