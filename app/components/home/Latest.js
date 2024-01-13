@@ -4,7 +4,6 @@ import LineThiny from '../common/LineThiny'
 import style from './home.module.css'
 import LatestPopUp from './latestPopUp'
 import { useState } from 'react'
-import Linkorbutton from '../common/Linkorbutton'
 import Link from 'next/link'
 
 function Latest() {
