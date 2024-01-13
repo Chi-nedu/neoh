@@ -27,7 +27,7 @@ function NewsConponent() {
             <h1 className={styles.newsHead}>nedu boi</h1>
             <div className='border-l-[1.4rem] border-t-[2.4rem] border-l-[rgb(59,59,59)] border-t-[transparent]'></div>
         </div>
-        <Link id="mouseThing" className={styles.newsLink} href={'/'}>Neoh's nft adoption is a joke to you ahbi</Link>
+        <Link id="mouseThing" className={styles.newsLink} href={'/'}>Neohs nft adoption is a joke to you ahbi</Link>
         <p className={styles.newsText}>this thing no fit hard atv alll</p>
         <Linkorbutton
             href={'/'}

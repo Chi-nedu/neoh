@@ -6,7 +6,7 @@ function Investors() {
     <div>
         <div className={`${style.investorsContainer} py-[8rem]`}>
             <div className={`${style.investors} pad width`}>
-                <h1 className={style.whytitle}>Neoh's investors</h1>
+                <h1 className={style.whytitle}>Neoh&apos;s investors</h1>
                 <div className='flex justify-center'>
                     <LineThiny
                         width={10}

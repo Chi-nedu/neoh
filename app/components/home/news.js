@@ -6,7 +6,7 @@ function News() {
   return (
     <div className={style.NewsContainer}>
         <div className={`${style.News} width pad py-[8rem]`}>
-            <h1 className={style.whytitle}>Neoh's News</h1>
+            <h1 className={style.whytitle}>Neoh&apos;s News</h1>
             <div className='flex justify-center'>
                 <LineThiny
                     width={10}
